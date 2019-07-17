@@ -5,7 +5,7 @@ $searcher = [adsisearcher] $test
 $searcher.Filter = '(objectClass=User)'
 $searcher.FindAll() 
 
-#All AD Users All attrs.
+#All AD Users All attrs...
 Get-ADUser -F * -PR * | Export-Csv Usersreports.csv -NoTypeInformation
 
 #How to find Locked out accounts?
